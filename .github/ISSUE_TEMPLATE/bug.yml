@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible problem in c6s or Cerberus
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include secrets, tokens, recovery material, vault exports, or unredacted logs.
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Product surface
+      options:
+        - c6s CLI
+        - Cerberus for macOS
+        - Cerberus for iOS
+        - Web console
+        - Agent skills or MCP
+        - Documentation or installation
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version and channel
+      placeholder: "For example: c6s 0.5.10 stable"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS version, device model or architecture, network conditions, and relevant browser.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed secrets, tokens, private keys, personal data, and unredacted logs.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true

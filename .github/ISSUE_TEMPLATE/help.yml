@@ -1,0 +1,35 @@
+name: Help and installation
+description: Ask for help without exposing sensitive data
+title: "[Help]: "
+labels: [support, triage]
+body:
+  - type: markdown
+    attributes:
+      value: Never paste credentials, tokens, private keys, recovery material, vault exports, or unredacted logs.
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: blocker
+    attributes:
+      label: Where are you blocked?
+      description: Include non-sensitive error text and the command or screen involved.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Version and environment
+      placeholder: "For example: Cerberus 0.5.3, macOS 15, Apple Silicon"
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed all secret values and personal data.
+          required: true

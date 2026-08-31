@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest a safer or more useful c6s workflow
+title: "[Feature]: "
+labels: [enhancement, triage]
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Product surface
+      options:
+        - c6s CLI
+        - Cerberus for macOS
+        - Cerberus for iOS
+        - Web console
+        - Agent skills or MCP
+        - Organization and access management
+        - Documentation or installation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: User need
+      description: What are you trying to accomplish, and what is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+      description: Describe the workflow rather than only a technical implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: security
+    attributes:
+      label: Security or privacy considerations
+      description: Explain any new secret exposure, approval, identity, recovery, or sharing behavior.
