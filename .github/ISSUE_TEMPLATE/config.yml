@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Documentation
-    url: https://docs.c6s.whitekiwi.link
+    url: https://docs.c6s.app
     about: Read installation and product documentation before filing an issue.
   - name: Security vulnerability
     url: https://github.com/c6shq/.github/blob/main/SECURITY.md

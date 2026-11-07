@@ -1,7 +1,7 @@
 # c6s feedback
 
 This is the public feedback and support tracker for
-[c6s — Cerberus](https://c6s.whitekiwi.link).
+[c6s — Cerberus](https://c6s.app).
 
 Use the issue forms to:
 
@@ -10,7 +10,7 @@ Use the issue forms to:
 - ask for help with installation and account access.
 
 Before opening an issue, search existing reports and check the
-[documentation](https://docs.c6s.whitekiwi.link). Include the app or CLI version,
+[documentation](https://docs.c6s.app). Include the app or CLI version,
 platform, release channel, and non-sensitive diagnostic details when relevant.
 
 ## Never post secrets
